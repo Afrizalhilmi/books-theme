@@ -1,5 +1,4 @@
 // Counter Animation
-
 let nCount = selector => {
     $(selector).each(function () {
         $(this)
@@ -21,5 +20,18 @@ $(window).scroll(function () {
     if (a == 0 && $(window).scrollTop() >= oTop) {
         a++;
         nCount(".rect > h1");
+    }
+});
+
+// Sticky Navbar
+let navbar = $(".navbar");
+
+$(window).scroll(function () {
+    // get the complete hight of window
+    let oTop = $(".section-2").offset().top - window.innerHeight;
+    if ($(window).scrollTop() > oTop) {
+        navbar.addClass("sticky");
+    } else {
+        navbar.removeClass("sticky");
     }
 });
