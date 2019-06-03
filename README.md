@@ -1,5 +1,5 @@
 # Books theme
-Bootstrap books theme with bootstrap 4
+Bootstrap books theme completely responsive with bootstrap 4
 
 Preview
 =
